@@ -19,7 +19,9 @@ This is a guide for setting up free Cloud deployment of mongoDB using mlab. It c
 ```
 11. Replace your database user's credentials in place of `<dbuser>` and `<dbpassword>`.
 
-Now, you can use this link to connect to the cloud database just as you do with a local instance of mongoDB server.
+## Usage
+
+You can use the link above to connect to the cloud database just as you do with a local instance of mongoDB server.
 
 For eg.
 With Node.js, if you use mongoose, you can use it like this -
@@ -27,5 +29,7 @@ With Node.js, if you use mongoose, you can use it like this -
 ```javascript
 mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds012345.mlab.com:56789/mydb');
 ```
+
+## Queries
 
 For any kind of queries, feel free to raise an issue in this repository.
