@@ -1,6 +1,6 @@
-# Setting up MongoDb
+# Cloud deployment of MongoDb
 
-This is a guide for setting up a free cloud Deployment of mongoDB using mlab. It can be used with your web-app while it is deployed on any cloud platform including the IBM Bluemix Platform.
+This is a guide for setting up free Cloud deployment of mongoDB using mlab. It can be used with your web-app while it is deployed on any cloud platform including the IBM Bluemix.
 
 ## Set up an mLab account
 
@@ -14,8 +14,10 @@ This is a guide for setting up a free cloud Deployment of mongoDB using mlab. It
 8. Navigate to the page of the database you just created.
 9. Add a new user under the users tab. You can use any username and password. I suggest that it should be different from your account credentials as your whole team would be using it.
 10. Get the standard MongoDB URI. It should look something like -
-  `mongodb://<dbuser>:<dbpassword>@ds012345.mlab.com:56789/mydb`
-11. Replace your database user's credentials in place of <dbuser> and <dbpassword>.
+```
+  mongodb://<dbuser>:<dbpassword>@ds012345.mlab.com:56789/mydb
+```
+11. Replace your database user's credentials in place of `<dbuser>` and `<dbpassword>`.
 
 Now, you can use this link to connect to the cloud database just as you do with a local instance of mongoDB server.
 
@@ -26,4 +28,4 @@ With Node.js, if you use mongoose, you can use it like this -
 mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds012345.mlab.com:56789/mydb');
 ```
 
-For any kind of queries, you can raise an issue in this repository.
+For any kind of queries, feel free to raise an issue in this repository.
